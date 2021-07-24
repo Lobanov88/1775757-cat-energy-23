@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Илья Лобанов](https://up.htmlacademy.ru/adaptive/23/user/1775757).
-* Наставник: [Анастасия Васинская] (https://htmlacademy.ru/profile/vanastasiya).
+* Наставник: [Анастасия Васинская](https://htmlacademy.ru/profile/vanastasiya).
 
 ---
 
