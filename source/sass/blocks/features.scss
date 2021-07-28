@@ -1,0 +1,7 @@
+.features__text {
+  @include font-arial;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $basic-dark-grey;
+}

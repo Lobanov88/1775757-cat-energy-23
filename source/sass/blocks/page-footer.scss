@@ -1,0 +1,15 @@
+.cooperation__title {
+  @include font-oswald;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $basic-black;
+}
+
+.cooperation__adress {
+  @include font-arial;
+}
+
+.copyright__text {
+  @include font-arial;
+}

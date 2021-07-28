@@ -1,0 +1,28 @@
+.promo-block {
+  background-image: linear-gradient($transparent-green, $transparent-green), url("../img/promo-block-image.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top center;
+}
+
+.promo-block__title {
+  @include font-oswald;
+  color: $basic-white;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.promo-block__text {
+  @include font-oswald;
+  color: $basic-white;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.promo-block__image {
+  text-align: center;
+}
