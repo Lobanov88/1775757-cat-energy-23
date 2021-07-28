@@ -1,0 +1,30 @@
+.cooperation {
+  padding-left: 20px;
+  padding-top: 28px;
+  padding-bottom: 26px;
+}
+
+.cooperation__title {
+  @include font-oswald;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $basic-black;
+  text-transform: uppercase;
+}
+
+.cooperation__adress {
+  @include font-arial;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $basic-dark-grey;
+}
+
+.copyright__text {
+  @include font-arial;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $basic-dark-grey;
+}

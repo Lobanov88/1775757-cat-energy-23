@@ -3,15 +3,16 @@
 }
 
 .page__body {
+  min-width: 320px;
   margin: 0;
   padding: 0;
   min-height: 100%;
 }
 
-// .page__body * {
-//   margin: 0;
-//   padding: 0;
-// }
+.page__body * {
+  margin: 0;
+  padding: 0;
+}
 
 .page__body a {
   text-decoration: none;

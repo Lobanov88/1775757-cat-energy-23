@@ -1,9 +1,4 @@
 .page-header {
-  @include font-oswald;
-  text-transform: uppercase;
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: 500;
-  background-color: $basic-white;
-  color: $basic-black;
+  padding: 10px 20px;
+  padding-bottom: 17px;
 }

@@ -1,0 +1,33 @@
+.other-products__title {
+  @include font-oswald;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $basic-black;
+  margin-bottom: 49px;
+}
+
+.other-products__name {
+  @include font-oswald;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $product-card-grey;
+}
+
+.other-products__weight,
+.other-products__price {
+  @include font-arial;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: $basic-dark-grey;
+}
+
+.other-products__list {
+  margin-bottom: 55px;
+}
+
+.other-products__item {
+  margin-bottom: 31px;
+}

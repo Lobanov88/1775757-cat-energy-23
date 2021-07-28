@@ -1,5 +1,8 @@
 .true-story {
   background-color: $background-grey;
+  padding-top: 27px;
+  padding-left: 20px;
+  padding-bottom: 25px;
 }
 
 .true-story__title {
@@ -8,6 +11,7 @@
   line-height: 40px;
   font-weight: 400;
   color: $basic-black;
+  margin-bottom: 33px;
 }
 
 .true-story__text {
@@ -16,6 +20,11 @@
   line-height: 18px;
   font-weight: 400;
   color: $basic-dark-grey;
+  margin-bottom: 25px;
+}
+
+.true-story__facts {
+  margin-bottom: 25px;
 }
 
 .true-story__number {
@@ -40,6 +49,11 @@
   line-height: 20px;
   font-weight: 400;
   color: $basic-black;
+  margin-bottom: 42px;
+}
+
+.true-story__photos-list {
+  margin-bottom: 23px;
 }
 
 .slider__toggle {

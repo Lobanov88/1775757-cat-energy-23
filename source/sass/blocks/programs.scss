@@ -1,5 +1,13 @@
+.programs {
+  margin-bottom: 27px;
+}
+
 .programs__item {
   background-color: $basic-grey;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .programs__item-title {
@@ -9,6 +17,8 @@
   font-weight: 400;
   color: $basic-black;
   text-transform: uppercase;
+  margin-left: 91px;
+  margin-bottom: 29px;
 }
 
 .programs__item-text {
@@ -17,6 +27,7 @@
   line-height: 18px;
   font-weight: 400;
   color: $basic-dark-grey;
+  margin-bottom: 38px;
 }
 
 .programs__link {
@@ -24,5 +35,6 @@
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
+  color: $basic-black;
   text-transform: uppercase;
 }

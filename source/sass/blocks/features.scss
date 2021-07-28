@@ -1,7 +1,20 @@
+.features--container {
+  padding-left: 80px;
+  margin-bottom: 42px;
+}
+
 .features__text {
   @include font-arial;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   color: $basic-dark-grey;
+}
+
+.features__title {
+  margin-bottom: 38px;
+}
+
+.features__item {
+  margin-bottom: 20px;
 }

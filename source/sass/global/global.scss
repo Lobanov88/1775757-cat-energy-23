@@ -10,12 +10,12 @@
 }
 
 .container {
-  // width: 940px;
-  // margin: 0 auto;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .button {
-  font-family: "Oswald", "Verdana", sans-serif;
+  @include font-oswald;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -23,9 +23,10 @@
   color: $basic-white;
   text-transform: uppercase;
   display: flex;
+  justify-content: center;
   align-items: center;
-  text-align: center;
   box-sizing: border-box;
   width: 280px;
   height: 40px;
+  border: none;
 }

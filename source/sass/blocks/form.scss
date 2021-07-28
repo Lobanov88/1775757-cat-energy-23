@@ -1,0 +1,109 @@
+.page-main__title--form {
+  margin-bottom: 37px;
+}
+
+.form-text {
+  @include font-oswald;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $basic-black;
+  text-transform: uppercase;
+  margin-bottom: 39px;
+}
+
+.form__fieldset {
+  border: none;
+}
+
+.form__fieldset--info {
+  margin-bottom: 49px;
+}
+
+.form__fieldset--goal {
+  margin-bottom: 45px;
+}
+
+.form__fieldset--contacts {
+  margin-bottom: 23px;
+}
+
+.form__fieldset--comment {
+  margin-bottom: 23px;
+}
+
+.form__fieldset--other {
+  margin-bottom: 34px;
+}
+
+.form__text {
+  @include font-oswald;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $basic-dark-grey;
+  text-transform: uppercase;
+}
+
+.form__text--dark {
+  color: $product-card-grey;
+}
+
+.form__text--black {
+  color: $basic-black;
+}
+
+.form__legend {
+  @include font-oswald;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  color: $basic-black;
+}
+
+.form__subtext {
+  @include font-arial;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $basic-black;
+  text-transform: none;
+}
+
+.form__item {
+  width: 280px;
+  height: 46px;
+  margin-bottom: 13px;
+}
+
+.form__input {
+  padding: 13px 15px;
+}
+
+.form__button {
+  margin-bottom: 21px;
+}
+
+.form__subtext {
+  margin-bottom: 32px;
+}
+
+.form__radio--goal {
+  margin-bottom: 12px;
+}
+
+.form__legend--contacts {
+  margin-bottom: 35px;
+}
+
+.form__legend--comment {
+  margin-bottom: 38px;
+}
+
+.form__legend--other {
+  margin-bottom: 34px;
+}
+
+.form__checkbox--other {
+  margin-bottom: 20px;
+}

@@ -1,17 +1,25 @@
 // global
 
 @import "global/normalize";
-@import "global/global.scss";
-@import "global/fonts.scss";
 @import "global/colors.scss";
+@import "global/fonts.scss";
 @import "global/mixins.scss";
+@import "global/global.scss";
 
 // blocks
 
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
 @import "blocks/promo-block.scss";
 @import "blocks/programs.scss";
 @import "blocks/features.scss";
 @import "blocks/true-story.scss";
+@import "blocks/main.scss";
+@import "blocks/catalog.scss";
+@import "blocks/product-card.scss";
+@import "blocks/other-products.scss";
+@import "blocks/action.scss";
+@import "blocks/form.scss";
 @import "blocks/page-footer.scss";
+@import "blocks/cooperation.scss";
