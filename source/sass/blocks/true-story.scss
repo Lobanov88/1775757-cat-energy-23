@@ -1,0 +1,65 @@
+.true-story {
+  background-color: $background-grey;
+  padding-top: 27px;
+  padding-left: 20px;
+  padding-bottom: 25px;
+}
+
+.true-story__title {
+  @include font-oswald;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: $basic-black;
+  margin-bottom: 33px;
+}
+
+.true-story__text {
+  @include font-arial;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $basic-dark-grey;
+  margin-bottom: 25px;
+}
+
+.true-story__facts {
+  margin-bottom: 25px;
+}
+
+.true-story__number {
+  @include font-oswald;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $basic-black;
+}
+
+.true-story__description {
+  @include font-arial;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  color: $basic-dark-grey;
+}
+
+.true-story__price {
+  @include font-oswald;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $basic-black;
+  margin-bottom: 42px;
+}
+
+.true-story__photos-list {
+  margin-bottom: 23px;
+}
+
+.slider__toggle {
+  @include font-oswald;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $basic-black;
+}

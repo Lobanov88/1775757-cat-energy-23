@@ -1,0 +1,36 @@
+.page-main__title--catalog {
+  margin-bottom: 49px;
+}
+
+.catalog__caption {
+  @include font-oswald;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $basic-black;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.catalog__text {
+  @include font-arial;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $basic-dark-grey;
+  margin-bottom: 21px;
+}
+
+.catalog__list {
+  margin-bottom: 36px;
+}
+
+.catalog__button {
+  margin-bottom: 23px;
+}
+
+.button--catalog {
+  background-color: $basic-grey;
+  color: $basic-dark-grey;
+  margin-bottom: 50px;
+}
