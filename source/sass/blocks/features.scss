@@ -1,20 +1,65 @@
-.features--container {
+.features__list {
   padding-left: 80px;
   margin-bottom: 42px;
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    padding-left: unset;
+    margin-bottom: 90px;
+    grid-template-columns: 230px 230px;
+    column-gap: 153px;
+    row-gap: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: unset;
+    padding-bottom: 205px;
+    grid-template-columns: 230px 230px 230px 230px;
+    column-gap: 94px;
+    row-gap: unset;
+  }
 }
 
-.features__text {
+.features__title {
+  @include font-oswald;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: $basic-black;
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
+}
+
+.features__item {
   @include font-arial;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   color: $basic-dark-grey;
-}
-
-.features__title {
-  margin-bottom: 38px;
-}
-
-.features__item {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    box-sizing: border-box;
+    width: 230px;
+    height: 280px;
+    margin-bottom: unset;
+    padding-top: 151px;
+  }
+}
+
+.page-main__features {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 200px;
+  }
 }

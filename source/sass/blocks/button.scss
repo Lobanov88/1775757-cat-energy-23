@@ -1,0 +1,16 @@
+.button {
+  @include font-oswald;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: $basic-green;
+  color: $basic-white;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 280px;
+  height: 40px;
+  border: none;
+}

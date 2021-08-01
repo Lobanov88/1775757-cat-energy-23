@@ -2,6 +2,28 @@
   padding-left: 20px;
   padding-top: 28px;
   padding-bottom: 26px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 570px;
+    height: 201px;
+    background-color: $basic-white;
+    box-sizing: border-box;
+    padding-left: 76px;
+    padding-right: 89px;
+    padding-top: 66px;
+    padding-bottom: 59px;
+  }
+}
+
+.cooperation--container {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
 .cooperation__title {
@@ -11,6 +33,12 @@
   font-weight: 400;
   color: $basic-black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 171px;
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .cooperation__adress {
@@ -19,6 +47,15 @@
   line-height: 20px;
   font-weight: 400;
   color: $basic-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 159px;
+    font-size: 16px;
+    display: grid;
+    grid-template-rows: min-content min-content;
+    text-align: right;
+    row-gap: 12px;
+  }
 }
 
 .copyright__text {

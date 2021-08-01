@@ -1,4 +1,9 @@
-.page-main__title--form {
+.form__title {
+  @include font-oswald;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $basic-black;
   margin-bottom: 37px;
 }
 
@@ -68,6 +73,7 @@
   font-weight: 400;
   color: $basic-black;
   text-transform: none;
+  margin-bottom: 32px;
 }
 
 .form__item {
@@ -82,10 +88,6 @@
 
 .form__button {
   margin-bottom: 21px;
-}
-
-.form__subtext {
-  margin-bottom: 32px;
 }
 
 .form__radio {
