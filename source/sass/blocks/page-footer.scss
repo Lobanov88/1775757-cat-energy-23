@@ -3,6 +3,21 @@
 }
 
 .page-footer__footer {
-  padding-top: 39px;
-  padding-bottom: 32px;
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 150px 130px 160px;
+    column-gap: 130px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 400px;
+  }
+}
+
+.page-footer__logo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 32px;
 }

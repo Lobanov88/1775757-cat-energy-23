@@ -1,13 +1,38 @@
-.programs {
+.page-main__programs {
   margin-bottom: 27px;
+}
+
+.programs {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .programs__item {
   background-color: $basic-grey;
+  box-sizing: border-box;
   padding-top: 30px;
   padding-left: 20px;
   padding-bottom: 18px;
   margin-bottom: 20px;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding-top: 77px;
+    padding-left: 53px;
+    padding-bottom: 57px;
+    padding-right: 316px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    padding-top: 77px;
+    padding-left: 52px;
+    padding-bottom: 55px;
+    padding-right: 51px;
+  }
 }
 
 .programs__item-title {
@@ -17,8 +42,20 @@
   font-weight: 400;
   color: $basic-black;
   text-transform: uppercase;
-  margin-left: 91px;
+  margin-left: 71px;
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 24px;
+    margin-left: unset;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
+    margin-left: 162px;
+  }
 }
 
 .programs__item-text {
@@ -28,6 +65,16 @@
   font-weight: 400;
   color: $basic-dark-grey;
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .programs__link {
@@ -37,4 +84,9 @@
   font-weight: 400;
   color: $basic-black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

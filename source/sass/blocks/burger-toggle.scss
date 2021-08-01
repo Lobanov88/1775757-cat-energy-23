@@ -1,0 +1,39 @@
+.burger-toggle {
+  box-sizing: border-box;
+  width: 24px;
+  height: 20px;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.burger-toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: $basic-black;
+}
+
+.burger-toggle::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: $basic-black;
+}
+
+.burger-toggle__container::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: $basic-black;
+}
