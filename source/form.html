@@ -35,50 +35,52 @@
         </ul>
       </nav>
     </header>
-    <main class="page-main">
+    <main class="page-main container">
       <h1 class="form__title">Подбор программы</h1>
       <p class="form-text">
-        Заполните анкету, и мы подберем программу пмтания для вашего кота
+        Заполните анкету, и мы подберем программу питания для вашего кота
       </p>
       <form class="form form__text" method="post" action="https://echo.htmlacademy.ru">
-        <fieldset class="form__fieldset form__fieldset--info">
-          <div class="form__item">
-            <label class="form__label" for="cat-name">Имя:*</label>
-            <input class="form__input form__text" type="text" id="cat-name" name="name" placeholder="Имя" required>
-          </div>
-          <div class="form__item">
-            <label class="form__label" for="cat-weight">Вес (кг):*</label>
-            <input class="form__input form__text" type="text" id="cat-weight" name="weight" placeholder="Вес" required>
-          </div>
-          <div class="form__item">
-            <label class="form__label" for="cat-age">Возраст (лет):</label>
-            <input class="form__input form__text" type="text" id="cat-age" name="age" placeholder="Возраст">
-          </div>
-        </fieldset>
-        <fieldset class="form__fieldset form__fieldset--goal">
-          <ul>
-            <li>
-              <input class="form__radio" type="radio" name="goal" value="losing-weight" id="losing" checked>
-              <label class="form__label form__text--dark" for="losing">Похудение</label>
-            </li>
-            <li>
-              <input class="form__radio" type="radio" name="goal" value="rising-weight" id="rising">
-              <label class="form__label form__text--dark" for="rising">Набор массы</label>
-            </li>
-            <li>
-              <input class="form__radio" type="radio" name="goal" value="question" id="question">
-              <label class="form__label form__text--dark" for="question">Не знаю (нужен ваш совет) </label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="form__top-wrapper">
+          <fieldset class="form__fieldset form__fieldset--info">
+            <div class="form__item">
+              <label class="form__label" for="cat-name">Имя:*</label>
+              <input class="form__input form__text" type="text" id="cat-name" name="name" placeholder="Имя" required>
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="cat-weight">Вес (кг):*</label>
+              <input class="form__input form__text" type="text" id="cat-weight" name="weight" placeholder="Вес" required>
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="cat-age">Возраст (лет):</label>
+              <input class="form__input form__text" type="text" id="cat-age" name="age" placeholder="Возраст">
+            </div>
+          </fieldset>
+          <fieldset class="form__fieldset form__fieldset--goal">
+            <ul>
+              <li>
+                <input class="form__radio" type="radio" name="goal" value="losing-weight" id="losing" checked>
+                <label class="form__label form__text--dark" for="losing">Похудение</label>
+              </li>
+              <li>
+                <input class="form__radio" type="radio" name="goal" value="rising-weight" id="rising">
+                <label class="form__label form__text--dark" for="rising">Набор массы</label>
+              </li>
+              <li>
+                <input class="form__radio" type="radio" name="goal" value="question" id="question">
+                <label class="form__label form__text--dark" for="question">Не знаю (нужен ваш совет) </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <fieldset class="form__fieldset form__fieldset--contacts">
           <legend class="form__legend form__legend--contacts">Контактные данные (владельца кота)</legend>
-          <ul>
-            <li>
+          <ul class="form__list--contacts">
+            <li class="form__item">
               <label class="form__label" for="mail">e-mail:*</label>
               <input class="form__input form__text" type="email" id="mail" name="email" placeholder="e-mail" required>
             </li>
-            <li>
+            <li class="form__item">
               <label class="form__label" for="phone">Телефон:*</label>
               <input class="form__input form__text" type="tel" id="phone" name="phone" placeholder="Номер телефона" required>
             </li>
@@ -87,11 +89,11 @@
         <fieldset class="form__fieldset form__fieldset--comment">
           <legend class="form__legend form__legend--comment">Комментарий</legend>
           <label class="visually-hidden" for="comment">Комментарий к заказу</label>
-          <textarea class="form__text" name="comment" id="comment" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
+          <textarea class="form__text form__textarea" name="comment" id="comment" cols="40" rows="8">Расскажите обо всех повадках кота</textarea>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--other">
           <legend class="form__legend form__legend--other">Дополнительно</legend>
-          <ul>
+          <ul class="form__list--other">
             <li>
               <input class="form__checkbox" type="checkbox" id="sugar" name="sugar" checked>
               <label class="form__text--black" for="sugar">Сахарозаменитель</label>
@@ -110,8 +112,10 @@
             </li>
           </ul>
         </fieldset>
-        <button class="button form__button">Отправить заявку</button>
-        <span class="form__subtext">*&mdash; Обязательные поля</span>
+        <div class="form__submit-container">
+          <button class="button form__button">Отправить заявку</button>
+          <span class="form__subtext">*&mdash; Обязательные поля</span>
+        </div>
       </form>
     </main>
     <footer class="page-footer">
