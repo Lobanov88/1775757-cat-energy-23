@@ -5,6 +5,12 @@
   font-weight: 400;
   color: $basic-black;
   margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 163px;
+  }
 }
 
 .catalog__caption {
@@ -15,6 +21,14 @@
   color: $basic-black;
   text-transform: uppercase;
   margin-bottom: 8px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+    width: 134px;
+    margin-bottom: 23px;
+  }
 }
 
 .catalog__text {
@@ -24,10 +38,32 @@
   font-weight: 400;
   color: $basic-dark-grey;
   margin-bottom: 21px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    width: 167px;
+    margin-bottom: 87px;
+  }
 }
 
 .catalog__list {
   margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    display: grid;
+    grid-template-columns: 324px 324px;
+    column-gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    display: grid;
+    grid-template-columns: 245px 245px 245px 245px;
+    column-gap: 80px;
+  }
 }
 
 .catalog__button {
@@ -35,7 +71,54 @@
 }
 
 .button--catalog {
+  box-sizing: border-box;
   background-color: $basic-grey;
   color: $basic-dark-grey;
-  margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+    height: 40px;
+  }
+}
+
+.catalog__item-more {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 52px;
+    width: 324px;
+    height: 430px;
+    border: 2px solid $basic-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 430px;
+  }
+}
+
+.button-more {
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  margin-bottom: 21px;
+
+  // technical
+  border: 1px solid $basic-black;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 49px;
+  }
 }

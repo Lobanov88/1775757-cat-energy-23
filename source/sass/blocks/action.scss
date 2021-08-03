@@ -1,10 +1,28 @@
 .action {
-  background-color: $transparent-green;
   background-image: url("../img/gift-photo.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  box-sizing: border-box;
   height: 289px;
   margin-bottom: 35px;
+  padding-top: 186px;
+  padding-left: 58px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 200px;
+    background-image: url("../img/gift-photo-tablet.png");
+    padding-top: 71px;
+    padding-left: 423px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 289px;
+    background-image: url("../img/gift-photo-desktop.png");
+    padding-top: 185px;
+    padding-left: 41px;
+  }
 }
 
 .action__text {
@@ -13,4 +31,6 @@
   line-height: 20px;
   font-weight: 400;
   color: $basic-white;
+  text-align: center;
+  width: 161px;
 }
