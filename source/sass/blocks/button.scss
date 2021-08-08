@@ -13,4 +13,14 @@
   width: 280px;
   height: 40px;
   border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $basic-green-2;
+  }
+
+  &:active {
+    color: $basic-white-2;
+    background-color: $basic-green-2;
+  }
 }

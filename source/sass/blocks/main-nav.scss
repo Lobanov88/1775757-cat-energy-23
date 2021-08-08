@@ -11,9 +11,11 @@
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
+    padding-top: 15px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 16px;
     font-size: 20px;
     line-height: 30px;
     background-color: unset;
@@ -33,7 +35,7 @@
     content: "";
     position: absolute;
     right: -110px;
-    top: 0;
+    top: -16px;
     width: 720px;
     height: 694px;
     background-image: url("../img/promo-desk.png");
@@ -50,9 +52,19 @@
 }
 
 .main-nav__list {
-  display: none;
+  position: absolute;
+  top: 68px;
+  left: 0;
+
+  width: 100%;
+  background-color: $basic-white;
+  text-align: center;
+
 
   @media (min-width: $tablet-width) {
+    position: unset;
+    background-color: unset;
+    text-align: unset;
     display: flex;
     justify-content: space-between;
     width: 440px;
@@ -60,6 +72,18 @@
 
   @media (min-width: $desktop-width) {
     width: 478px;
+  }
+}
+
+.main-nav__item {
+  border-top: 1px solid $nav-mobile-border;
+  padding-top: 22px;
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    border-top: unset;
+    padding-top: unset;
+    padding-bottom: unset;
   }
 }
 
@@ -77,4 +101,28 @@
 
 .main-nav__link {
   color: inherit;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav--close .main-nav__list {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.main-nav--open .main-nav__list {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }

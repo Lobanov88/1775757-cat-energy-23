@@ -65,3 +65,11 @@
   font-weight: 400;
   color: $basic-dark-grey;
 }
+
+.cooperation--inner {
+  background-color: $basic-grey;
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-white;
+  }
+}
