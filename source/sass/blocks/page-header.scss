@@ -3,6 +3,9 @@
   padding-bottom: 17px;
   display: flex;
   position: relative;
+}
+
+.page-header__wrapper {
   border-bottom: 1px solid $programs-border;
 
   @media (min-width: $tablet-width) {

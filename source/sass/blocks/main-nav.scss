@@ -121,8 +121,16 @@
 
 .main-nav--open .main-nav__list {
   display: block;
+  animation: menu-mobile 1s;
 
   @media (min-width: $tablet-width) {
     display: flex;
+  }
+}
+
+.main-nav--hidden .main-nav__list {
+  @media (max-width: $mobile-width-only) {
+    animation: menu-mobile-reverse 1s forwards;
+    // animation-direction: alternate;
   }
 }

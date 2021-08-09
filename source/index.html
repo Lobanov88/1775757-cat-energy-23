@@ -75,34 +75,42 @@
         </ol>
       </section>
       <section class="true-story">
-        <div class="container">
-          <h2 class="true-story__title">Живой пример</h2>
-          <p class="true-story__text">
-            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-          </p>
-          <div class="true-story__numbers">
-            <dl class="true-story__facts">
-              <div class="true-story__item">
-                <dt class="true-story__number">5 кг</dt>
-                <dd class="true-story__description">снижение веса</dd>
+        <div class="true-story__container container">
+          <div>
+            <h2 class="true-story__title">Живой пример</h2>
+            <p class="true-story__text">
+              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+            </p>
+            <div class="true-story__numbers">
+              <dl class="true-story__facts">
+                <div class="true-story__item">
+                  <dt class="true-story__number">5 кг</dt>
+                  <dd class="true-story__description">снижение веса</dd>
+                </div>
+                <div class="true-story__item">
+                  <dt class="true-story__number">60 дней</dt>
+                  <dd class="true-story__description">затрачено времени</dd>
+                </div>
+              </dl>
+              <div class="true-story__price">
+                <span>Затраты на питание: </span><span>15 000 руб.</span>
               </div>
-              <div class="true-story__item">
-                <dt class="true-story__number">60 дней</dt>
-                <dd class="true-story__description">затрачено времени</dd>
-              </div>
-            </dl>
-            <div class="true-story__price">
-              <span>Затраты на питание: </span><span>15 000 руб.</span>
             </div>
           </div>
           <div class="slider true-story__slider">
             <ul class="true-story__photos-list slider__list">
               <li class="true-story__photos-item true-story__photos-item--bold slider__item slider__item--current">
-                <img class="slider-picture" src="img/true-story/before-mobile.png" alt="Кот с лишним весом">
+                <picture class="true-story__picture">
+                  <source media="(min-width: 768px)" srcset="img/true-story/before-desktop.png">
+                  <img src="img/true-story/before-mobile.png" alt="Кот с лишним весом">
+                </picture>
               </li>
-              <!-- <li class="true-story__photos-item true-story__photos-item--thin slider__item">
-                <img class="slider-picture" src="img/true-story/after-mobile.png" alt="Стройный кот">
-              </li> -->
+              <li class="true-story__photos-item true-story__photos-item--thin slider__item">
+                <picture class="true-story__picture">
+                  <source media="(min-width: 768px)" srcset="img/true-story/after-desktop.png">
+                  <img src="img/true-story/after-mobile.png" alt="Стройный кот">
+                </picture>
+              </li>
             </ul>
             <div class="tru-story__toggles slider__toggles">
               <button class="slider__toggle slider__toggle--current" type="button">Было</button>

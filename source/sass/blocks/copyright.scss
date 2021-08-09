@@ -20,5 +20,9 @@
 }
 
 .copyright__name {
-  margin-right: 15px;
+  margin-right: 135px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 15px;
+  }
 }
