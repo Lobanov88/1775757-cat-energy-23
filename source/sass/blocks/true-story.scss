@@ -242,9 +242,16 @@
   display: flex;
   justify-content: space-between;
   width: 202px;
-
   position: relative;
   left: 67px;
+
+  @media (min-width: $tablet-width) {
+    width: 598px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 592px;
+  }
 }
 
 .true-story__toggle-text {
@@ -254,7 +261,17 @@
   font-weight: 400;
   color: $basic-black;
   text-transform: uppercase;
-  justify-content: space-between;
+  border: none;
+  cursor: pointer;
+  border-bottom: 1px dotted $slider-bottom;
+
+  &:hover {
+    border-bottom: 1px solid $slider-bottom-hover;
+  }
+
+  &:active {
+    border: none;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
