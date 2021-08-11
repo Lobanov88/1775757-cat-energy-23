@@ -1,4 +1,28 @@
 .copyright {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.copyright__text:hover .copyright__svg-path {
+  fill: $basic-green;
+}
+
+.copyright__text:active {
+  opacity: 0.5;
+}
+
+.copyright__text {
+  display: flex;
+  align-items: center;
+}
+
+.copyright__name {
+  margin-right: 135px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 15px;
+  }
 }

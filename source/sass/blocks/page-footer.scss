@@ -1,13 +1,9 @@
-.page-footer {
-  background-color: $basic-grey;
-}
-
 .page-footer__footer {
-  display: grid;
-
   @media (min-width: $tablet-width) {
+    display: grid;
     grid-template-columns: 150px 130px 160px;
     column-gap: 130px;
+    align-items: baseline;
   }
 
   @media (min-width: $desktop-width) {
@@ -15,9 +11,31 @@
   }
 }
 
+.page-footer__footer--wrapper {
+  background-color: $basic-grey;
+}
+
 .page-footer__logo {
   display: flex;
   justify-content: center;
   align-content: center;
-  margin-bottom: 32px;
+  border-bottom: 1px solid $programs-border;
+  padding-bottom: 28px;
+  padding-top: 36px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.page-footer__text-logo {
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

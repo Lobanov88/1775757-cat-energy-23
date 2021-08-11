@@ -1,0 +1,19 @@
+@keyframes menu-mobile {
+  0% {
+    transform: translateY(-300px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes menu-mobile-reverse {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-300px);
+  }
+}

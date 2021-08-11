@@ -1,6 +1,13 @@
 .social {
   display: flex;
   justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 21px;
+  border-bottom: 1px solid $programs-border;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .social__list {
@@ -9,6 +16,14 @@
   width: 130px;
 }
 
-.page-footer__social {
-  margin-bottom: 46px;
+.social__button:hover .social__svg-path {
+  fill: $basic-green;
+}
+
+.social__button:hover .social__svg-path--fb {
+  stroke: $basic-green;
+}
+
+.social__button:active {
+  opacity: 0.5;
 }

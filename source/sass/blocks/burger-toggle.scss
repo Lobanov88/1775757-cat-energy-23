@@ -1,39 +1,127 @@
 .burger-toggle {
   box-sizing: border-box;
   width: 24px;
-  height: 20px;
+  height: 16px;
   position: relative;
   border: none;
   background-color: transparent;
   cursor: pointer;
+  z-index: 2;
 }
 
-.burger-toggle::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 24px;
-  height: 2px;
-  background-color: $basic-black;
+.main-nav--close .burger-toggle {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $basic-black;
+
+    transition-duration: 0.5s;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $basic-black;
+
+    transition-duration: 0.5s;
+  }
+
+  &__container::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $basic-black;
+
+    transition-duration: 0.5s;
+  }
 }
 
-.burger-toggle::after {
-  content: "";
-  position: absolute;
-  top: 16px;
-  left: 0;
-  width: 24px;
-  height: 2px;
-  background-color: $basic-black;
+.main-nav--hidden .burger-toggle {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $basic-black;
+
+    transition-duration: 0.5s;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $basic-black;
+
+    transition-duration: 0.5s;
+  }
+
+  &__container::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $basic-black;
+
+    transition-duration: 0.5s;
+  }
 }
 
-.burger-toggle__container::before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 0;
-  width: 24px;
-  height: 2px;
-  background-color: $basic-black;
+.main-nav--open .burger-toggle {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $basic-black;
+
+    transform: translateY(8px) rotate(45deg) scale(1.1);
+    transition-duration: 0.5s;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $basic-black;
+
+    transform: translateY(-8px) rotate(-45deg) scale(1.1);
+    transition-duration: 0.5s;
+  }
+
+  &__container::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $basic-black;
+
+    transform: scale(0);
+    transition-duration: 0.5s;
+  }
 }

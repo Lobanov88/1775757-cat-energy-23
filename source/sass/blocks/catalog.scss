@@ -4,12 +4,15 @@
   line-height: 36px;
   font-weight: 400;
   color: $basic-black;
-  margin-bottom: 49px;
+  padding-top: 27px;
+  padding-bottom: 41px;
+  border-bottom: 1px solid $catalog-border;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 163px;
+    border: none;
   }
 }
 
@@ -84,6 +87,15 @@
     width: 169px;
     height: 40px;
   }
+
+  &:hover {
+    background-color: $catalog-border;
+  }
+
+  &:active {
+    color: $basic-dark-grey-2;
+    background-color: $catalog-border;
+  }
 }
 
 .catalog__item-more {
@@ -92,11 +104,12 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 49px;
+  border-bottom: 1px solid $catalog-border;
 
   @media (min-width: $tablet-width) {
     padding-top: 52px;
     width: 324px;
-    height: 430px;
+    height: 431px;
     border: 2px solid $basic-grey;
   }
 
@@ -106,19 +119,51 @@
   }
 }
 
+.catalog__item-more--wrapper {
+  padding-top: 81px;
+}
+
 .button-more {
   box-sizing: border-box;
   width: 30px;
   height: 30px;
   background-color: transparent;
   margin-bottom: 21px;
-
-  // technical
-  border: 1px solid $basic-black;
+  cursor: pointer;
+  position: relative;
+  border: none;
 
   @media (min-width: $tablet-width) {
     width: 60px;
     height: 60px;
     margin-bottom: 49px;
+  }
+}
+
+.button-more::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  top: 50%;
+  left: 0;
+  background-color: $catalog-button-more;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+  }
+}
+
+.button-more::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 30px;
+  top: 0;
+  left: 50%;
+  background-color: $catalog-button-more;
+
+  @media (min-width: $tablet-width) {
+    height: 60px;
   }
 }
