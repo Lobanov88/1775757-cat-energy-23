@@ -20,7 +20,7 @@
 }
 
 .form__fieldset--info {
-  padding-bottom: 27px;
+  padding-bottom: 8px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 72px;
@@ -34,9 +34,8 @@
 
 .form__fieldset--goal {
   box-sizing: border-box;
-  height: 160px;
+  height: 158px;
   padding-top: 28px;
-  padding-bottom: 26px;
   border: 1px solid $programs-border;
 
   @media (min-width: $tablet-width) {
@@ -58,8 +57,6 @@
     border: 1px solid $programs-border;
     padding-left: 40px;
     height: 196px;
-    padding-top: 28px;
-    padding-bottom: 26px;
     box-sizing: border-box;
     width: 628px;
   }
@@ -70,23 +67,24 @@
 }
 
 .form__fieldset--contacts {
-  padding-top: 35px;
-  margin-bottom: 23px;
+  margin-bottom: 13px;
   position: relative;
 }
 
 .form__fieldset--contacts::before {
   content: "";
   position: absolute;
-  top: 75px;
-  left: 0;
-  width: 100%;
+  top: 42px;
+  left: 50%;
+  width: 50%;
   height: 2px;
   background-color: $basic-green;
   z-index: -1;
 
   @media (min-width: $tablet-width) {
     top: 80px;
+    width: 100%;
+    left: 0;
   }
 }
 
@@ -102,20 +100,22 @@
 .form__fieldset--comment::before {
   content: "";
   position: absolute;
-  top: 15px;
-  left: 0;
-  width: 100%;
+  top: 13px;
+  left: 50%;
+  width: 50%;
   height: 2px;
   background-color: $basic-green;
   z-index: -1;
 
   @media (min-width: $tablet-width) {
     top: 20px;
+    left: 0;
+    width: 100%;
   }
 }
 
 .form__fieldset--other {
-  margin-bottom: 34px;
+  margin-bottom: 18px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -126,15 +126,17 @@
 .form__fieldset--other::before {
   content: "";
   position: absolute;
-  top: 15px;
-  left: 0;
-  width: 100%;
+  top: 14px;
+  left: 50%;
+  width: 50%;
   height: 2px;
   background-color: $basic-green;
   z-index: -1;
 
   @media (min-width: $tablet-width) {
     top: 20px;
+    left: 0;
+    width: 100%;
   }
 }
 
@@ -212,6 +214,8 @@
 .form__textarea {
   padding: 10px;
   box-sizing: border-box;
+  width: 280px;
+  height: 150px;
 
   @media (min-width: $tablet-width) {
     width: 630px;
@@ -277,7 +281,7 @@
 }
 
 .form__label {
-  margin-right: 10px;
+  margin-right: 12px;
 }
 
 .form__input-wrapper {
@@ -289,10 +293,11 @@
 }
 
 .form__input {
-  padding: 13px 15px;
+  box-sizing: border-box;
+  padding: 13px 14px;
   flex-grow: 1;
   border-color: $input-color;
-
+  border-style: solid;
   outline: 0;
   outline-offset: 0;
 
@@ -327,19 +332,22 @@
 
 .form__legend--contacts {
   padding-top: 26px;
-  margin-bottom: 20px;
-  width: 190px;
+  margin-bottom: 34px;
+  box-sizing: border-box;
+  width: 201px;
   background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
+    // padding-left: 40px;
     margin-bottom: 76px;
     width: 512px;
   }
 }
 
 .form__legend--comment {
-  margin-bottom: 38px;
-  width: 125px;
+  margin-bottom: 35px;
+  box-sizing: border-box;
+  width: 143px;
   background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
@@ -349,8 +357,9 @@
 }
 
 .form__legend--other {
-  margin-bottom: 34px;
-  width: 125px;
+  margin-bottom: 36px;
+  box-sizing: border-box;
+  width: 164px;
   background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
@@ -391,7 +400,7 @@
 }
 
 .form__item--radio {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 
   &:last-child {
     margin-bottom: 0;
@@ -399,7 +408,7 @@
 }
 
 .form__item--checkbox {
-  margin-bottom: 22px;
+  margin-bottom: 25px;
 }
 
 .form__item-label {
