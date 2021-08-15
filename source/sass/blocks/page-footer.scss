@@ -4,10 +4,12 @@
     grid-template-columns: 150px 130px 160px;
     column-gap: 130px;
     align-items: baseline;
+    padding-top: 20px;
+    padding-bottom: 29px;
   }
 
   @media (min-width: $desktop-width) {
-    column-gap: 400px;
+    column-gap: 390px;
   }
 }
 
@@ -25,6 +27,7 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+    justify-content: flex-start;
   }
 }
 
