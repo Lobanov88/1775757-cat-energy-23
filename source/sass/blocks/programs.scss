@@ -1,5 +1,9 @@
 .page-main__programs {
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 44px;
+  }
 }
 
 .programs {
@@ -9,7 +13,7 @@
   }
 }
 
-.programs__item-title--losing::before {
+.programs__item--losing::before {
   content: "";
   position: absolute;
   width: 50px;
@@ -25,7 +29,7 @@
     width: 200px;
     height: 211px;
     left: 446px;
-    top: 81px;
+    top: 79px;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,7 +40,7 @@
   }
 }
 
-.programs__item-title--rising::before {
+.programs__item--rising::before {
   content: "";
   position: absolute;
   width: 67px;
@@ -79,8 +83,9 @@
     width: 708px;
     padding-top: 77px;
     padding-left: 53px;
-    padding-bottom: 57px;
+    padding-bottom: 55px;
     padding-right: 316px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -128,12 +133,14 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 48px;
+    margin-bottom: 32px;
     border: none;
+    width: 340px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 23px;
+    margin-bottom: 10px;
+    width: 467px;
   }
 }
 
@@ -152,7 +159,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    background-position: 135px center;
+    background-position: 133px center;
   }
 
   &:hover {

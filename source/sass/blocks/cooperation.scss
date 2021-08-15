@@ -4,10 +4,17 @@
   display: flex;
   justify-content: space-between;
 
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 60px;
+    padding-top: 68px;
+  }
+
   @media (min-width: $desktop-width) {
     position: absolute;
     left: 0;
-    top: 50px;
+    top: 92px;
     width: 570px;
     height: 201px;
     background-color: $basic-white;

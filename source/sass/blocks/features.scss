@@ -1,6 +1,7 @@
 .features {
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $nav-mobile-border;
+    padding-bottom: 8px;
   }
 
   @media (min-width: $desktop-width) {
@@ -37,7 +38,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 32px;
+    margin-bottom: 72px;
   }
 }
 
@@ -63,7 +64,7 @@
     margin-bottom: unset;
     padding-top: 110px;
     background-repeat: no-repeat;
-    background-position: 111px 0;
+    background-position: 120px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -103,7 +104,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 11px;
+    margin-bottom: 19px;
   }
 }
 

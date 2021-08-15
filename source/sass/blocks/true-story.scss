@@ -4,8 +4,15 @@
   background-color: $background-grey;
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 68px;
     background-color: unset;
     position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -16,7 +23,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    top: 570px;
+    top: 576px;
     background-color: $background-grey;
     z-index: -1;
   }
@@ -27,7 +34,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    top: 150px;
+    top: 140px;
     background-color: $background-grey;
     z-index: -1;
   }
@@ -54,10 +61,11 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 62px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 180px;
+    margin-bottom: 150px;
   }
 }
 
@@ -73,6 +81,7 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 54px;
+    width: 680px;
   }
 
   @media (min-width: $desktop-width) {
@@ -90,6 +99,10 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 162px 162px;
     column-gap: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -150,7 +163,9 @@
     margin-left: auto;
     display: grid;
     grid-template-rows: min-content min-content;
+    row-gap: 10px;
     justify-items: end;
+    padding-top: 12px;
   }
 
   @media (min-width: $desktop-width) {
@@ -159,6 +174,7 @@
     grid-template-columns: 180px 160px;
     column-gap: 60px;
     justify-items: start;
+    padding-top: 0;
   }
 }
 
@@ -166,13 +182,14 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 250px;
+    margin-bottom: 48px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 366px;
     row-gap: 55px;
+    margin-bottom: 30px;
   }
 }
 
@@ -187,12 +204,29 @@
 .true-story__slider {
   position: relative;
   left: -23px;
+
+  @media (min-width: $tablet-width) {
+    left: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -30px;
+    top: -56px;
+  }
 }
 
 .true-story__slider-list {
   margin-bottom: 23px;
   position: relative;
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .true-story__slider-item {
@@ -246,11 +280,13 @@
   left: 67px;
 
   @media (min-width: $tablet-width) {
-    width: 598px;
+    width: 568px;
+    left: 55px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 592px;
+    width: 572px;
+    left: 80px;
   }
 }
 
