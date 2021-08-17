@@ -16,14 +16,33 @@
   width: 130px;
 }
 
-.social__button:hover .social__svg-path {
-  fill: $basic-green;
+.social__button {
+  color: $social-basic;
 }
 
-.social__button:hover .social__svg-path--fb {
-  stroke: $basic-green;
+.social__button:hover {
+  color: $basic-green;
 }
 
 .social__button:active {
   opacity: 0.5;
 }
+
+.social__svg--vk {
+  padding-top: 3px;
+  width: 23px;
+  height: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.social__svg--insta {
+  padding-top: 3px;
+}
+
+// .social__svg--fb {
+
+// }
