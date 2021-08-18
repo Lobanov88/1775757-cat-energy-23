@@ -4,10 +4,19 @@
   align-items: center;
   padding-top: 22px;
   padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
 }
 
-.copyright__text:hover .copyright__svg-path {
-  fill: $basic-green;
+.copyright__text {
+  color: $social-basic;
+}
+
+.copyright__text:hover {
+  color: $basic-green;
 }
 
 .copyright__text:active {
@@ -20,9 +29,14 @@
 }
 
 .copyright__name {
-  margin-right: 135px;
+  margin-right: 120px;
+  color: $basic-dark-grey;
 
   @media (min-width: $tablet-width) {
-    margin-right: 15px;
+    margin-right: 25px;
   }
+}
+
+.copyright__logo {
+  padding-bottom: 10px;
 }
