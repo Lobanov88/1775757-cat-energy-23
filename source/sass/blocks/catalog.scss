@@ -65,6 +65,9 @@
   }
 }
 
+.catalog__item--more-products {
+  padding-bottom: 0;
+}
 
 .catalog__caption {
   @include font-oswald;

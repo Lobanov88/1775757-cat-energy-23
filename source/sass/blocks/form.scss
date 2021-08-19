@@ -1,6 +1,6 @@
 .form {
   @media (min-width: $tablet-width) {
-    padding-left: 78px;
+    // padding-left: 78px;
   }
 
   @media (min-width: $desktop-width) {
@@ -91,6 +91,11 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 42px;
+    padding-left: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
   }
 }
 
@@ -117,6 +122,11 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 62px;
+    padding-left: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
   }
 }
 
@@ -143,10 +153,12 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 32px;
+    padding-left: 78px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 42px;
+    padding-left: 0;
   }
 }
 
@@ -191,12 +203,14 @@
     text-align: left;
     margin-bottom: 50px;
     align-items: center;
+    padding-left: 40px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 568px 282px;
     column-gap: 80px;
     align-items: baseline;
+    padding-left: 0;
   }
 }
 
@@ -565,9 +579,13 @@
 }
 
 .form__top-wrapper--container--big {
+  @media (min-width: $tablet-width) {
+    padding-left: 80px;
+  }
   @media (min-width: $desktop-width) {
     width: 1220px;
     margin: 0 auto;
+    padding-left: 0;
   }
 }
 
