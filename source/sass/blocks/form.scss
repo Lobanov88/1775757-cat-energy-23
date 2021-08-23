@@ -99,7 +99,11 @@
   }
 }
 
-.form__fieldset--contacts::before {
+.form__fieldset--contacts-wrapper {
+  position: relative;
+}
+
+.form__fieldset--contacts-wrapper::before {
   content: "";
   position: absolute;
   top: 42px;
@@ -130,7 +134,11 @@
   }
 }
 
-.form__fieldset--comment::before {
+.form__fieldset--comment-wrapper {
+  position: relative;
+}
+
+.form__fieldset--comment-wrapper::before {
   content: "";
   position: absolute;
   top: 13px;
@@ -162,7 +170,11 @@
   }
 }
 
-.form__fieldset--other::before {
+.form__fieldset--other-wrapper {
+  position: relative;
+}
+
+.form__fieldset--other-wrapper::before {
   content: "";
   position: absolute;
   top: 14px;

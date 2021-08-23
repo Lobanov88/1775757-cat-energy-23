@@ -9,6 +9,14 @@
   z-index: 2;
 }
 
+.burger-toggle__container {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .main-nav--close .burger-toggle {
   &::before {
     content: "";
@@ -37,7 +45,7 @@
   &__container::before {
     content: "";
     position: absolute;
-    top: 8px;
+    top: 19px;
     left: 0;
     width: 24px;
     height: 2px;
@@ -75,7 +83,7 @@
   &__container::before {
     content: "";
     position: absolute;
-    top: 8px;
+    top: 19px;
     left: 0;
     width: 24px;
     height: 2px;
@@ -115,7 +123,7 @@
   &__container::before {
     content: "";
     position: absolute;
-    top: 8px;
+    top: 19px;
     left: 0;
     width: 24px;
     height: 2px;

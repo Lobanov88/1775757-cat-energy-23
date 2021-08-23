@@ -23,7 +23,9 @@
         <img src="img/logo/text-logo-mobile-header.svg" alt="Логотип компании текстом" width="135" height="40">
       </a>
       <nav class="main-nav main-nav--index main-nav--close">
-        <button class="burger-toggle main-nav__burger-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="burger-toggle__container">
+          <button class="burger-toggle main-nav__burger-toggle" type="button" aria-label="Открыть меню"></button>
+        </div>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--current main-nav__item--current--index">
             <a class="main-nav__link">
@@ -45,10 +47,12 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Корм для кошек Кэт Энерджи</h1>
-      <section class="promo-block page-main__promo-block">
-        <div class="container">
+      <section class="promo-block page-main__promo-block promo-block--container">
+        <div class="promo-block--background">
           <h2 class="promo-block__title">Функциональное<br> питание для котов</h2>
           <p class="promo-block__text">Занялся собой? Займись котом!</p>
+        </div>
+        <div class="container">
           <a class="button button--promo-block promo-block__button" href="form.html">Подобрать программу</a>
         </div>
       </section>
