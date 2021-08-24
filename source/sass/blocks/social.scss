@@ -1,6 +1,7 @@
 .social {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   padding-top: 20px;
   padding-bottom: 18px;
   border-bottom: 1px solid $programs-border;
@@ -59,6 +60,7 @@
 .social__svg--fb {
   width: 13px;
   height: 20px;
+  fill: none;
 
   @media (min-width: $tablet-width) {
     width: 28px;

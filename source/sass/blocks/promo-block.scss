@@ -1,27 +1,86 @@
 .promo-block {
-  background-image: url("../img/promo-picture.png"), url("../img/promo.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: center 165px, center top;
   box-sizing: border-box;
   width: 320px;
-  padding-top: 27px;
   display: flex;
   flex-wrap: wrap;
 
+  @media (min-width: $tablet-width) {
+    width: unset;
+    padding-bottom: 458px;
+    padding-left: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+    padding-bottom: 260px;
+  }
+}
+
+.promo-block--container {
+  @media (min-width: $tablet-width) {
+    width: 707px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.promo-block--background {
+  background-color: $basic-green;
+  background-image: url("../img/promo.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  box-sizing: border-box;
+  width: 320px;
+  height: 302px;
+  padding-top: 27px;
+  margin-bottom: 138px;
+  position: relative;
+
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/promo-picture@2x.png"), url("../img/promo@2x.png");
-    background-size: 280px auto, 320px auto;
+    background-image:  url("../img/promo@2x.png");
+    background-size: 320px auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: unset;
+    background-image: unset;
+    color: $basic-black;
+    width: unset;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 15px;
+  }
+}
+
+.promo-block--background::after {
+  content: "";
+  position: absolute;
+  top: 165px;
+  left: 20px;
+  width: 280px;
+  height: 270px;
+  background-image: url("../img/promo-picture.png");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  z-index: 2;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-picture@2x.png");
+    background-size: 280px auto;
   }
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/promo-picture-tablet.png");
-    background-repeat: no-repeat;
-    background-position: center 228px;
-    background-color: $basic-white;
-    color: $basic-black;
-    width: unset;
-    padding-left: 175px;
-    padding-bottom: 502px;
+    z-index: -2;
+    width: 709px;
+    height: 609px;
+    left: -95px;
+    top: 225px;
+
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/promo-picture-tablet@2x.png");
@@ -30,11 +89,19 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: none;
-    padding-left: 156px;
-    padding-top: 14px;
-    padding-bottom: 255px;
-    position: relative;
+    top: -5px;
+    left: 365px;
+    width: 552px;
+    height: 499px;
+    background-image: url("../img/promo-picture-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 2;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-picture-desktop@2x.png");
+      background-size: 552px auto;
+    }
   }
 }
 
@@ -84,38 +151,16 @@
   line-height: 14px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 302px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     color: $basic-black;
     text-align: left;
-    margin-bottom: 49px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 52px;
-  }
-}
-
-.promo-block::after {
-  @media (min-width: $desktop-width) {
-    content: "";
-    position: absolute;
-    top: -5px;
-    right: 330px;
-    width: 552px;
-    height: 499px;
-    background-image: url("../img/promo-picture-desktop.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    z-index: 1;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/promo-picture-desktop@2x.png");
-      background-size: 552px auto;
-    }
+    // margin-bottom: 62px;
   }
 }
 
@@ -125,5 +170,12 @@
     height: 54px;
     font-size: 20px;
     line-height: 20px;
+    position: relative;
+    top: -45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    top: 5px;
   }
 }
