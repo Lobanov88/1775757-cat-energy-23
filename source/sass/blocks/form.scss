@@ -555,6 +555,18 @@
   }
 }
 
+.form__checkbox:hover + label::before,
+.form__checkbox:focus + label::before,
+.form__checkbox:active + label::before {
+  border-color: $active-form;
+}
+
+.form__radio-input:hover + label::before,
+.form__radio-input:focus + label::before,
+.form__radio-input:active + label::before {
+  border-color: $active-form;
+}
+
 .form__radio-input:checked + label::after {
   content: "";
   position: absolute;
@@ -594,6 +606,7 @@
   @media (min-width: $tablet-width) {
     padding-left: 80px;
   }
+
   @media (min-width: $desktop-width) {
     width: 1220px;
     margin: 0 auto;
