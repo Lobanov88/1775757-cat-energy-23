@@ -59,6 +59,7 @@
   width: 100%;
   background-color: $basic-white;
   text-align: center;
+  z-index: 3;
 
   @media (min-width: $tablet-width) {
     position: unset;
