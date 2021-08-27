@@ -7,12 +7,14 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
-    padding-bottom: 40px;
+    padding-bottom: 0;
   }
 }
 
 .copyright__text {
   color: $social-basic;
+  display: flex;
+  align-items: center;
 }
 
 .copyright__text:hover {
@@ -23,20 +25,31 @@
   opacity: 0.5;
 }
 
-.copyright__text {
-  display: flex;
-  align-items: center;
-}
-
 .copyright__name {
-  margin-right: 120px;
+  margin-right: 138px;
   color: $basic-dark-grey;
+  display: inline-block;
+  padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 25px;
+    margin-right: 22px;
+    position: relative;
+    // margin-bottom: 10px;
+    // top: -40px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    top: 2px;
   }
 }
 
 .copyright__logo {
   padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    // top: -40px;
+  }
 }

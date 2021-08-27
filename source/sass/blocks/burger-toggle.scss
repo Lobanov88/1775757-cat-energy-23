@@ -41,18 +41,18 @@
 
     transition-duration: 0.5s;
   }
+}
 
-  &__container::before {
-    content: "";
-    position: absolute;
-    top: 19px;
-    left: 0;
-    width: 24px;
-    height: 2px;
-    background-color: $basic-black;
+.main-nav--close .burger-toggle__container::before {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: $basic-black;
 
-    transition-duration: 0.5s;
-  }
+  transition-duration: 0.5s;
 }
 
 .main-nav--hidden .burger-toggle {
@@ -79,18 +79,18 @@
 
     transition-duration: 0.5s;
   }
+}
 
-  &__container::before {
-    content: "";
-    position: absolute;
-    top: 19px;
-    left: 0;
-    width: 24px;
-    height: 2px;
-    background-color: $basic-black;
+.main-nav--hidden .burger-toggle__container::before {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: $basic-black;
 
-    transition-duration: 0.5s;
-  }
+  transition-duration: 0.5s;
 }
 
 .main-nav--open .burger-toggle {
@@ -119,17 +119,17 @@
     transform: translateY(-8px) rotate(-45deg) scale(1.1);
     transition-duration: 0.5s;
   }
+}
 
-  &__container::before {
-    content: "";
-    position: absolute;
-    top: 19px;
-    left: 0;
-    width: 24px;
-    height: 2px;
-    background-color: $basic-black;
+.main-nav--open .burger-toggle__container::before {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: $basic-black;
 
-    transform: scale(0);
-    transition-duration: 0.5s;
-  }
+  transform: scale(0);
+  transition-duration: 0.5s;
 }

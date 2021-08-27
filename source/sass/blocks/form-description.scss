@@ -1,0 +1,46 @@
+.form-description__title {
+  @include font-oswald;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $basic-black;
+  margin-bottom: 37px;
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 30px;
+    margin-bottom: 54px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-top: 38px;
+  }
+}
+
+.form-description__description {
+  @include font-oswald;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $basic-black;
+  text-transform: uppercase;
+  margin-bottom: 39px;
+  box-sizing: border-box;
+  width: 230px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 380px;
+    margin-bottom: 66px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
+}

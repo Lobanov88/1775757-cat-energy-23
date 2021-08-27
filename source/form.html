@@ -12,8 +12,8 @@
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   </head>
   <body class="page__body">
-    <div class="page-header__wrapper">
-      <header class="page-header container">
+    <header class="page-header page-header--inner">
+      <div class="page-header__container container">
         <a class="page-header__logo" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
@@ -46,14 +46,16 @@
             </li>
           </ul>
         </nav>
-      </header>
-    </div>
+      </div>
+    </header>
     <main class="page-main">
       <div class="container">
-        <h1 class="form__title">Подбор программы</h1>
-        <p class="form__description">
-          Заполните анкету, и мы подберем программу питания для вашего кота
-        </p>
+        <div class="form-description">
+          <h1 class="form-description__title">Подбор программы</h1>
+          <p class="form-description__description">
+            Заполните анкету, и мы подберем программу питания для вашего кота
+          </p>
+        </div>
       </div>
       <form class="form form__text" method="post" action="https://echo.htmlacademy.ru">
         <div class="form__top-wrapper--container--big">
@@ -77,17 +79,17 @@
             <fieldset class="form__fieldset form__fieldset--goal">
               <div class="form__top-wrapper--container--small">
                 <ul class="form__list--goal">
-                  <li class="form__item--other form__item--radio">
+                  <li class="form__item-other form__item-radio">
                     <input class="form__radio-input visually-hidden form__input--activity" type="radio" name="goal" value="losing-weight" id="losing" checked>
-                    <label class="form__label form__text--dark form__item-label form__radio-label" for="losing">Похудение</label>
+                    <label class="form__label form__text-dark form__item-label form__radio-label" for="losing">Похудение</label>
                   </li>
-                  <li class="form__item--other form__item--radio">
+                  <li class="form__item-other form__item-radio">
                     <input class="form__radio-input visually-hidden form__input--activity" type="radio" name="goal" value="rising-weight" id="rising">
-                    <label class="form__label form__text--dark form__item-label" for="rising">Набор массы</label>
+                    <label class="form__label form__text-dark form__item-label" for="rising">Набор массы</label>
                   </li>
-                  <li class="form__item--other form__item--radio">
+                  <li class="form__item-other form__item-radio">
                     <input class="form__radio-input visually-hidden form__input--activity" type="radio" name="goal" value="question" id="question" disabled>
-                    <label class="form__label form__text--dark form__item-label" for="question">Не знаю (нужен ваш совет) </label>
+                    <label class="form__label form__text-dark form__item-label" for="question">Не знаю (нужен ваш совет) </label>
                   </li>
                 </ul>
               </div>
@@ -97,7 +99,7 @@
         <div class="form__fieldset--contacts-wrapper">
           <fieldset class="form__fieldset form__fieldset--contacts container">
             <legend class="form__legend form__legend--contacts">Контактные данные (владельца кота)</legend>
-            <ul class="form__list--contacts">
+            <ul class="form__list-contacts">
               <li class="form__item">
                 <label class="form__label" for="mail">e-mail:*</label>
                 <div class="form__input-wrapper">                  <input class="form__input form__text" type="email" id="mail" name="email" placeholder="e-mail" required>
@@ -125,21 +127,21 @@
           <fieldset class="form__fieldset form__fieldset--other container">
             <legend class="form__legend form__legend--other">Дополнительно</legend>
             <ul class="form__list--other">
-              <li class="form__item--other form__item--checkbox">
+              <li class="form__item-other form__item-checkbox">
                 <input class="form__checkbox visually-hidden form__input--activity" type="checkbox" id="sugar" name="sugar" checked>
-                <label class="form__text--black form__item-label" for="sugar">Сахарозаменитель</label>
+                <label class="form__text-black form__item-label" for="sugar">Сахарозаменитель</label>
               </li>
-              <li class="form__item--other form__item--checkbox">
+              <li class="form__item-other form__item-checkbox">
                 <input class="form__checkbox visually-hidden form__input--activity" type="checkbox" id="water" name="water">
-                <label class="form__text--black form__item-label" for="water">Питьевая вода</label>
+                <label class="form__text-black form__item-label" for="water">Питьевая вода</label>
               </li>
-              <li class="form__item--other form__item--checkbox">
+              <li class="form__item-other form__item-checkbox">
                 <input class="form__checkbox visually-hidden form__input--activity" type="checkbox" id="milk" name="milk">
-                <label class="form__text--black form__item-label" for="milk">Молоко</label>
+                <label class="form__text-black form__item-label" for="milk">Молоко</label>
               </li>
-              <li class="form__item--other form__item--checkbox">
+              <li class="form__item-other form__item-checkbox">
                 <input class="form__checkbox visually-hidden form__input--activity" type="checkbox" id="vitamins" name="vitamins" disabled>
-                <label class="form__text--black form__item-label" for="vitamins">Витамины</label>
+                <label class="form__text-black form__item-label" for="vitamins">Витамины</label>
               </li>
             </ul>
           </fieldset>
@@ -153,9 +155,9 @@
       </form>
     </main>
     <footer class="page-footer">
-      <div class="cooperation--inner">
-        <div class="container cooperation--container">
-          <section class="cooperation">
+      <div class="cooperation cooperation--inner">
+        <div class="container cooperation__wrapper">
+          <section class="cooperation__container">
             <h2 class="cooperation__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
             <p class="cooperation__adress">
               <span>ул. Большая Конюшенная, д. 19/8</span>
@@ -168,7 +170,7 @@
         <h2 class="visually-hidden">Карта</h2>
         <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.0942675733468!2d30.317497259948983!3d59.93965649048506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627818585403!5m2!1sru!2sru" allowfullscreen="" loading="lazy"></iframe>
       </section>
-      <div class="page-footer__footer--wrapper">
+      <div class="page-footer__bottom-part">
         <div class="container">
           <div class="page-footer__footer">
             <div class="page-footer__logo">
@@ -202,7 +204,7 @@
               </ul>
             </div>
             <div class="copyright">
-              <a class="copyright__text" href="#">
+              <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">
                 <span class="copyright__name">HTML Academy</span>
                 <svg class="copyright__logo" width="27" height="34">
                   <use xlink:href="img/sprite.svg#logo-academy"></use>

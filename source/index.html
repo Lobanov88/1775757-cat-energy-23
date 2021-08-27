@@ -12,44 +12,46 @@
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   </head>
   <body class="page__body">
-    <header class="page-header container">
-      <a class="page-header__logo">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
-          <img src="img/logo/logo-mobile.svg" alt="Логотип компании">
-        </picture>
-      </a>
-      <a class="page-header__text-logo">
-        <img src="img/logo/text-logo-mobile-header.svg" alt="Логотип компании текстом" width="135" height="40">
-      </a>
-      <nav class="main-nav main-nav--index main-nav--close">
-        <div class="burger-toggle__container">
-          <button class="burger-toggle main-nav__burger-toggle" type="button" aria-label="Открыть меню"></button>
-        </div>
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current main-nav__item--current--index">
-            <a class="main-nav__link">
-              Главная
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-      </nav>
+    <header class="page-header page-header--index">
+      <div class="page-header__container container">
+        <a class="page-header__logo">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+            <img src="img/logo/logo-mobile.svg" alt="Логотип компании">
+          </picture>
+        </a>
+        <a class="page-header__text-logo">
+          <img src="img/logo/text-logo-mobile-header.svg" alt="Логотип компании текстом" width="135" height="40">
+        </a>
+        <nav class="main-nav main-nav--index main-nav--close">
+          <div class="burger-toggle__container">
+            <button class="burger-toggle main-nav__burger-toggle" type="button" aria-label="Открыть меню"></button>
+          </div>
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--current main-nav__item--current--index">
+              <a class="main-nav__link">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Корм для кошек Кэт Энерджи</h1>
       <section class="promo-block page-main__promo-block promo-block--container">
-        <div class="promo-block--background">
+        <div class="promo-block__background">
           <h2 class="promo-block__title">Функциональное<br> питание для котов</h2>
           <p class="promo-block__text">Занялся собой? Займись котом!</p>
         </div>
@@ -88,8 +90,8 @@
         </ol>
       </section>
       <section class="true-story">
-        <div class="true-story__container--big container">
-          <div class="true-story__container--small-left">
+        <div class="true-story__container-big container">
+          <div>
             <h2 class="true-story__title">Живой пример</h2>
             <p class="true-story__text">
               Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
@@ -126,7 +128,7 @@
               </li>
             </ul>
             <div class="true-story__toggle-container">
-              <button class="true-story__toggle-text">Было</button>
+              <button class="true-story__toggle-text true-story__toggle-text--before">Было</button>
               <div class="true-story__toggle">
                 <div class="true-story__toggle-bar">
                   <button class="true-story__toggle-slider">
@@ -134,27 +136,29 @@
                   </button>
                 </div>
               </div>
-              <button class="true-story__toggle-text">Стало</button>
+              <button class="true-story__toggle-text true-story__toggle-text--after">Стало</button>
             </div>
           </div>
         </div>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="container cooperation--container">
-        <section class="cooperation">
-          <h2 class="cooperation__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
-          <p class="cooperation__adress">
-            <span>ул. Большая Конюшенная, д. 19/8</span>
-            <span>Санкт-Петербург</span>
-          </p>
-        </section>
+      <div class="cooperation">
+        <div class="container cooperation__wrapper">
+          <section class="cooperation__container">
+            <h2 class="cooperation__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+            <p class="cooperation__adress">
+              <span>ул. Большая Конюшенная, д. 19/8</span>
+              <span>Санкт-Петербург</span>
+            </p>
+          </section>
+        </div>
       </div>
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
         <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.0942675733468!2d30.317497259948983!3d59.93965649048506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627818585403!5m2!1sru!2sru" allowfullscreen="" loading="lazy"></iframe>
       </section>
-      <div class="page-footer__footer--wrapper">
+      <div class="page-footer__bottom-part">
         <div class="container">
           <div class="page-footer__footer">
             <div class="page-footer__logo">
@@ -188,7 +192,7 @@
               </ul>
             </div>
             <div class="copyright">
-              <a class="copyright__text" href="#">
+              <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">
                 <span class="copyright__name">HTML Academy</span>
                 <svg class="copyright__logo" width="27" height="34">
                   <use xlink:href="img/sprite.svg#logo-academy"></use>

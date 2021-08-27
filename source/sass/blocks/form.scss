@@ -1,34 +1,10 @@
 .form {
   @media (min-width: $tablet-width) {
-    // padding-left: 78px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 10px;
     padding-bottom: 10px;
-  }
-}
-
-.form__title {
-  @include font-oswald;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
-  color: $basic-black;
-  margin-bottom: 37px;
-  padding-top: 27px;
-
-  @media (min-width: $tablet-width) {
-    font-size: 60px;
-    line-height: 60px;
-    padding-top: 30px;
-    margin-bottom: 54px;
-    padding-left: 40px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 0;
-    padding-top: 38px;
   }
 }
 
@@ -226,30 +202,6 @@
   }
 }
 
-.form__description {
-  @include font-oswald;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  color: $basic-black;
-  text-transform: uppercase;
-  margin-bottom: 39px;
-  box-sizing: border-box;
-  width: 230px;
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
-    width: 380px;
-    margin-bottom: 66px;
-    padding-left: 40px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 0;
-  }
-}
-
 .form__text {
   @include font-oswald;
   font-size: 16px;
@@ -264,11 +216,11 @@
   }
 }
 
-.form__text--dark {
+.form__text-dark {
   color: $product-card-grey;
 }
 
-.form__text--black {
+.form__text-black {
   color: $basic-black;
 }
 
@@ -335,7 +287,7 @@
   }
 }
 
-.form__list--contacts {
+.form__list-contacts {
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 569px 569px;
@@ -474,7 +426,7 @@
   margin-right: 15px;
 }
 
-.form__item--other {
+.form__item-other {
   padding-left: 46px;
 
   @media (min-width: $tablet-width) {
@@ -482,7 +434,7 @@
   }
 }
 
-.form__item--radio {
+.form__item-radio {
   margin-bottom: 24px;
 
   &:last-child {
@@ -490,7 +442,7 @@
   }
 }
 
-.form__item--checkbox {
+.form__item-checkbox {
   margin-bottom: 25px;
 }
 
@@ -558,19 +510,21 @@
 .form__checkbox:hover + label::before,
 .form__checkbox:focus + label::before,
 .form__checkbox:active + label::before {
-  border-color: $active-form;
+  // border-color: $active-form;
+  border-color: red;
 }
 
 .form__radio-input:hover + label::before,
 .form__radio-input:focus + label::before,
 .form__radio-input:active + label::before {
-  border-color: $active-form;
+  // border-color: $active-form;
+  border-color: red;
 }
 
 .form__radio-input:checked + label::after {
   content: "";
   position: absolute;
-  top: 4px;
+  top: 3px;
   left: -35px;
   width: 13px;
   height: 13px;
@@ -578,9 +532,9 @@
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
-    width: 18px;
-    height: 18px;
-    left: -47px;
+    width: 19px;
+    height: 19px;
+    left: -48px;
   }
 }
 
