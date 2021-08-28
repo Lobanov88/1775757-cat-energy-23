@@ -33,7 +33,7 @@
   background-position: top center;
   box-sizing: border-box;
   width: 320px;
-  height: 302px;
+  min-height: 302px;
   padding-top: 27px;
   margin-bottom: 138px;
   position: relative;
@@ -167,7 +167,7 @@
 .button--promo-block {
   @media (min-width: $tablet-width) {
     width: 244px;
-    height: 54px;
+    min-height: 54px;
     font-size: 20px;
     line-height: 20px;
     position: relative;

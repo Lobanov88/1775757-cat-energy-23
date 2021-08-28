@@ -1,12 +1,14 @@
 .other-products {
   position: relative;
+  padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 77px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 18px;
+    margin-bottom: 85px;
   }
 }
 
@@ -34,12 +36,12 @@
 .other-products__card {
   box-sizing: border-box;
   width: 282px;
-  height: 98px;
+  min-height: 98px;
   margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    height: 138px;
+    min-height: 138px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -51,9 +53,9 @@
   @media (min-width: $desktop-width) {
     padding: 0;
     padding-top: 15px;
-    padding-bottom: 56px;
+    padding-bottom: 16px;
     width: 894px;
-    height: 40px;
+    min-height: 40px;
     margin-bottom: 0;
     justify-content: flex-start;
     // align-items: center;
@@ -80,6 +82,8 @@
 }
 
 .other-products__item:last-child {
+  border-bottom: 1px solid $true-story-border;
+
   @media (min-width: $desktop-width) {
     border-bottom: 1px solid $catalog-border;
   }
@@ -88,10 +92,6 @@
 .other-products__price-item {
   display: flex;
   justify-content: space-between;
-
-  // @media (min-width: $tablet-width) {
-  //   margin-left: auto;
-  // }
 
   @media (min-width: $desktop-width) {
     margin-right: 50px;
@@ -106,7 +106,6 @@
   font-weight: 400;
   color: $basic-black;
   padding-bottom: 36px;
-  // border-bottom: 1px solid $catalog-border;
   width: 248px;
 
   @media (min-width: $tablet-width) {
@@ -181,6 +180,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 67px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .other-products__price-list {
@@ -194,14 +197,14 @@
 .other-products__button {
   @media (min-width: $tablet-width) {
     width: 632px;
-    height: 40px;
+    min-height: 40px;
     position: relative;
     top: 10px;
   }
 
   @media (min-width: $desktop-width) {
     width: 244px;
-    height: 40px;
+    min-height: 40px;
     top: 0;
   }
 }
@@ -211,5 +214,6 @@
     display: grid;
     grid-template-columns: 896px 245px;
     column-gap: 79px;
+    align-items: flex-start;
   }
 }

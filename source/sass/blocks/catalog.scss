@@ -137,12 +137,12 @@
 
   @media (min-width: $tablet-width) {
     width: 248px;
-    height: 40px;
+    min-height: 40px;
   }
 
   @media (min-width: $desktop-width) {
     width: 168px;
-    height: 40px;
+    min-height: 40px;
   }
 
   &:hover {
@@ -176,14 +176,14 @@
   @media (min-width: $tablet-width) {
     padding-top: 52px;
     width: 324px;
-    height: 431px;
+    min-height: 431px;
     border: 2px solid $basic-grey;
     margin-bottom: 49px;
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    height: 430px;
+    min-height: 430px;
     margin-bottom: 0;
   }
 }

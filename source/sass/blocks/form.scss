@@ -27,7 +27,7 @@
 
 .form__fieldset--goal {
   box-sizing: border-box;
-  height: 158px;
+  min-height: 158px;
   padding-top: 28px;
   border: 1px solid $programs-border;
 
@@ -35,13 +35,13 @@
     border: none;
     padding-top: 0;
     padding-bottom: 0;
-    height: 200px;
+    min-height: 200px;
     box-sizing: border-box;
   }
 
   @media (min-width: $desktop-width) {
     width: 568px;
-    height: 200px;
+    min-height: 200px;
   }
 }
 
@@ -49,7 +49,7 @@
   @media (min-width: $tablet-width) {
     border: 1px solid $programs-border;
     padding-left: 30px;
-    height: 196px;
+    min-height: 196px;
     box-sizing: border-box;
     width: 628px;
     padding-top: 28px;
@@ -228,11 +228,11 @@
   padding: 10px;
   box-sizing: border-box;
   width: 280px;
-  height: 150px;
+  min-height: 150px;
 
   @media (min-width: $tablet-width) {
     width: 630px;
-    height: 175px;
+    min-height: 175px;
     padding-left: 15px;
   }
 
@@ -340,7 +340,7 @@
 .button--form {
   @media (min-width: $tablet-width) {
     width: 282px;
-    height: 52px;
+    min-height: 52px;
     font-size: 20px;
   }
 }

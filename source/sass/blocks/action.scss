@@ -4,8 +4,7 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   box-sizing: border-box;
-  height: 289px;
-  margin-bottom: 35px;
+  min-height: 289px;
   padding-top: 186px;
   padding-left: 58px;
   position: relative;
@@ -17,7 +16,7 @@
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    height: 200px;
+    min-height: 200px;
     background-image: url("../img/gift-photo-tablet.png");
     padding-top: 72px;
     padding-left: 422px;
@@ -30,11 +29,11 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    height: 289px;
+    min-height: 289px;
     background-image: url("../img/gift-photo-desktop.png");
     padding-top: 185px;
     padding-left: 41px;
-    margin-bottom: 0;
+    padding-bottom: 0;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/gift-photo-desktop@2x.png");

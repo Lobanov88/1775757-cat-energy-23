@@ -30,22 +30,6 @@
   }
 }
 
-// .main-nav--index::before {
-//   @media (min-width: $desktop-width) {
-//     content: "";
-//     position: absolute;
-//     right: 100%;
-//     top: -52px;
-//     width: 720px;
-//     height: 694px;
-//     background-color: $basic-green;
-//     background-image: url("../img/promo-desktop.png");
-//     background-position: right top;
-//     background-repeat: no-repeat;
-//     z-index: -1;
-//   }
-// }
-
 .main-nav__burger-toggle {
   @media (min-width: $tablet-width) {
     display: none;
