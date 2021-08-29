@@ -14,7 +14,7 @@
   position: relative;
 }
 
-.page-header--index::before{
+.page-header--index::before {
   @media (min-width: $desktop-width) {
     content: "";
     position: absolute;
@@ -29,7 +29,7 @@
   }
 }
 
-.page-header--index::after{
+.page-header--index::after {
   @media (min-width: $desktop-width) {
     content: "";
     position: absolute;

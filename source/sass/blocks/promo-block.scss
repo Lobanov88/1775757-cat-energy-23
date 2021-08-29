@@ -56,52 +56,28 @@
   }
 }
 
-.promo-block__background::after {
-  content: "";
+.promo-block__image {
   position: absolute;
   top: 165px;
   left: 20px;
-  width: 280px;
-  height: 270px;
-  background-image: url("../img/promo-picture.png");
-  background-repeat: no-repeat;
-  background-position: center 0;
+  // width: 280px;
+  // height: 270px;
   z-index: 2;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/promo-picture@2x.png");
-    background-size: 280px auto;
-  }
-
   @media (min-width: $tablet-width) {
-    background-image: url("../img/promo-picture-tablet.png");
     z-index: -2;
-    width: 709px;
-    height: 609px;
+    // width: 709px;
+    // height: 609px;
     left: -95px;
     top: 225px;
-
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/promo-picture-tablet@2x.png");
-      background-size: 709px auto;
-    }
   }
 
   @media (min-width: $desktop-width) {
     top: -5px;
     left: 365px;
-    width: 552px;
-    height: 499px;
-    background-image: url("../img/promo-picture-desktop.png");
-    background-repeat: no-repeat;
-    background-position: center center;
+    // width: 552px;
+    // height: 499px;
     z-index: 2;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/promo-picture-desktop@2x.png");
-      background-size: 552px auto;
-    }
   }
 }
 
@@ -157,10 +133,6 @@
     line-height: 20px;
     color: $basic-black;
     text-align: left;
-  }
-
-  @media (min-width: $desktop-width) {
-    // margin-bottom: 62px;
   }
 }
 

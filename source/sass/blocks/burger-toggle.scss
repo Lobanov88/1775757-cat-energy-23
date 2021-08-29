@@ -1,4 +1,4 @@
-.burger-toggle {
+.burger-toggle__container {
   box-sizing: border-box;
   width: 24px;
   height: 16px;
@@ -9,7 +9,7 @@
   z-index: 4;
 }
 
-.burger-toggle__container {
+.burger-toggle {
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -17,7 +17,8 @@
   }
 }
 
-.main-nav--close .burger-toggle {
+.main-nav--close .burger-toggle__container {
+  // добавили
   &::before {
     content: "";
     position: absolute;
@@ -43,7 +44,8 @@
   }
 }
 
-.main-nav--close .burger-toggle__container::before {
+.main-nav--close .burger-toggle::before {
+  // убрали
   content: "";
   position: absolute;
   top: 19px;
@@ -55,7 +57,8 @@
   transition-duration: 0.5s;
 }
 
-.main-nav--hidden .burger-toggle {
+.main-nav--hidden .burger-toggle__container {
+  // добавили
   &::before {
     content: "";
     position: absolute;
@@ -81,7 +84,8 @@
   }
 }
 
-.main-nav--hidden .burger-toggle__container::before {
+.main-nav--hidden .burger-toggle::before {
+  // убрали
   content: "";
   position: absolute;
   top: 19px;
@@ -93,7 +97,8 @@
   transition-duration: 0.5s;
 }
 
-.main-nav--open .burger-toggle {
+.main-nav--open .burger-toggle__container {
+  // добавили
   &::before {
     content: "";
     position: absolute;
@@ -121,7 +126,8 @@
   }
 }
 
-.main-nav--open .burger-toggle__container::before {
+.main-nav--open .burger-toggle::before {
+  // убрали
   content: "";
   position: absolute;
   top: 19px;

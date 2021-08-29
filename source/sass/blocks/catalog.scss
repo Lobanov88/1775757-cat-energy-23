@@ -10,7 +10,7 @@
   }
 }
 
-.catalog__title {
+.catalog-title-text {
   @include font-oswald;
   font-size: 36px;
   line-height: 36px;
@@ -30,7 +30,7 @@
   }
 }
 
-.catalog__title--wrapper {
+.catalog-title {
   border-bottom: 1px solid $catalog-border;
 
   @media (min-width: $tablet-width) {
@@ -166,7 +166,7 @@
   }
 }
 
-.catalog__item-more {
+.catalog__item-more-wrapper {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -188,7 +188,7 @@
   }
 }
 
-.catalog__item-more--wrapper {
+.catalog__item-more {
   padding-top: 24px;
 
   @media (min-width: $tablet-width) {
